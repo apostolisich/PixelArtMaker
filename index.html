@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pixel Art Maker!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton|Indie+Flower">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>
+            Pixel Art Maker
+        </h1>
+
+        <div class="col">
+            <h2>Choose Grid Size</h2>
+            <form id="sizePicker"> 
+                <div class="dimensions-div">
+                    <label for="input_heigth">Grid Height:</label>  
+                    <input type="number" id="input_height" class="dimension-input" name="height" min="1" max="22" value="10">
+                </div>
+                <div class="dimensions-div">
+                    <label for="input_width">Grid Width:</label>
+                    <input type="number" id="input_width" class="dimension-input" name="width" min="1" max="38" value="10">
+                </div>
+                <input type="submit" class="submit-button" value="Create">
+            </form>
+        </div><!--
+        --><div class="col">
+            <h2>Pick A Color</h2>
+            <input type="color" id="colorPicker" class="color-picker">
+        </div><!-- 
+        --><div class="col">
+            <h2>Instructions</h2>
+
+            <div class="instructions">
+                <img src="https://thumb.ibb.co/bsmFEb/left_click.png" height="40px">
+                <img src="https://thumb.ibb.co/mX75Eb/filled_td.png" height="15px" class="instructions-image">
+            </div>
+            <div class="instructions">
+                <img src="https://thumb.ibb.co/b0FWnw/rigth_click.png" height="40px">
+                <img src="https://thumb.ibb.co/iWZkEb/empty_td.png" height="15px" class="instructions-image">
+            </div>
+        </div>
+
+        <h2>Design Canvas</h2>
+        <input type="image" src="https://thumb.ibb.co/kiKJZb/clear.png" id="reset_button" class="image-button" value="Clear Canvas">
+        <input type="image" src="https://thumb.ibb.co/fgrAfG/fill.png" id="fill_button" class="image-button" value="Fill Canvas">
+        <table id="pixel_canvas" oncontextmenu="return false"></table>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="designs.js"></script>
+</body>
+</html>
