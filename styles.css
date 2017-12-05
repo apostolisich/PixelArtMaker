@@ -21,6 +21,7 @@ h1 {
     font-family: myfont;
     font-size: 65px;
     color: #C33C54;
+    text-shadow: 5px 5px #000;
 }
 
 h2 {
@@ -44,6 +45,9 @@ td {
 table {
     border-collapse: collapse;
     margin: 0 auto;
+    -webkit-box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.75);
 }
 
 tr {
@@ -68,6 +72,9 @@ input[type=number] {
     border-radius: 4px;
     background-color: #37718E;
     color: #AEF3E7;
+    -webkit-box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.75);
 }
 
 .dimensions-div{
@@ -95,7 +102,7 @@ input[type=number] {
     border: none;
     border-bottom: 1px solid #AEF3E7;
     font-weight: bold;
-    color: #AEF3E7
+    color: #AEF3E7;
 }
 .submit-button{
     cursor: pointer;
