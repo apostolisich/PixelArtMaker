@@ -1,39 +1,9 @@
-// Select color input
-// Select size input
-
-// When size is submitted by the user, call makeGrid()
- 
 var color = $('#colorPicker').val();
 $('#colorPicker').on('input', function (){
     color = $('#colorPicker').val();
     console.log(color);
 });
 
-$("#sizePicker").submit(function(event){
-    event.preventDefault();
-    makeGrid();
-
-    $('td').on("mousedown mouseover", function(event) {
-        switch (event.which) {
-            case 1:
-                $(this).css("background-color",color);
-                console.log("sadasd");
-                break;
-            case 3:
-                event.preventDefault();
-                $(this).css("background-color", "white");
-                break;
-        }
-    });
-
-    $('#reset_button').click(function(){
-        $('td').css("background", "none");
-    });
-
-    $('#fill_button').click(function(){
-        $('td').css("background", color);
-    });
-});
 
 function makeGrid() {
     var canvas = $('#pixel_canvas');
@@ -50,4 +20,26 @@ function makeGrid() {
     }
 }
 
+$("#sizePicker").submit(function(event){
+    event.preventDefault();
+    makeGrid();
 
+    $('#pixel_canvas').on("mousedown mouseenter mousemove", "td", function(event) {
+            event.preventDefault();
+            if(event.which === 1){
+                $(this).css("background-color",color); 
+            }
+            
+            if(event.shiftKey){
+                $(this).css("background-color", "white");
+            }
+    });
+
+    $('#reset_button').click(function(){
+        $('td').css("background", "none");
+    });
+
+    $('#fill_button').click(function(){
+        $('td').css("background", color);
+    });
+});

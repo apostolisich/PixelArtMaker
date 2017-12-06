@@ -64,10 +64,10 @@ input[type=number] {
 
 .col{
     display: inline-block;
+    height: 157.2px;
     width: 30%;
     margin: 0px 13.985px;
     vertical-align: text-top;
-    height: 157.2px;
     border: 1px solid #37718E;
     border-radius: 4px;
     background-color: #37718E;
@@ -80,16 +80,17 @@ input[type=number] {
 .dimensions-div{
     width: 170px;
     margin: 0 auto;
-    text-align: right;
     margin-bottom: 6px;
+    text-align: right;
 }
 
 .color-picker{
     position: relative;
-    top: 20px;
+    top: 10px;
     background-color: #37718E;
-    border-radius: 40px;
+    border-radius: 4px;
     width: 70px;
+    height: 70px;
     cursor: pointer;
 }
 .instructions-image{

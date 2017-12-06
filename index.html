@@ -7,9 +7,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>
-            Pixel Art Maker
-        </h1>
+        <h1>Pixel Art Maker</h1>
 
         <div class="col">
             <h2>Choose Grid Size</h2>
@@ -33,12 +31,12 @@
             <h2>Instructions</h2>
 
             <div class="instructions">
-                <img src="https://thumb.ibb.co/bsmFEb/left_click.png" height="40px">
-                <img src="https://thumb.ibb.co/mX75Eb/filled_td.png" height="15px" class="instructions-image">
+                <img src="https://thumb.ibb.co/bsmFEb/left_click.png" alt="left click" height="40px">
+                <img src="https://thumb.ibb.co/mX75Eb/filled_td.png" alt="fill cell" height="15px" class="instructions-image">
             </div>
             <div class="instructions">
-                <img src="https://thumb.ibb.co/b0FWnw/rigth_click.png" height="40px">
-                <img src="https://thumb.ibb.co/iWZkEb/empty_td.png" height="15px" class="instructions-image">
+                <img src="https://image.ibb.co/icvsVG/shift.png" alt="shift" border="0" height="40px">
+                <img src="https://thumb.ibb.co/iWZkEb/empty_td.png" alt="empty cell" height="15px" class="instructions-image">
             </div>
         </div>
 
@@ -46,8 +44,9 @@
         <input type="image" src="https://thumb.ibb.co/kiKJZb/clear.png" id="reset_button" class="image-button" value="Clear Canvas">
         <input type="image" src="https://thumb.ibb.co/fgrAfG/fill.png" id="fill_button" class="image-button" value="Fill Canvas">
         <table id="pixel_canvas" oncontextmenu="return false"></table>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="designs.js"></script>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="designs.js"></script>
 </body>
 </html>
