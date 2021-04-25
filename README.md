@@ -1,4 +1,4 @@
-# tolisich.github.io
+# Pixel Art Maker
 The final project (Pixel Art Maker) from the Google Developer Challenge Scholarship in which I got selected. 
 
 The user inputs the dimensions (Height and Width) of a pixel canvas and clicks create. Then the user picks a color and starts drawing. 
